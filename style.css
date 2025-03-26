@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0e7f9;
+    color: #4b3869;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    color: #7b5e9e;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #7b5e9e;
+    margin-bottom: 15px;
+}
+
+.form-section, .inventory-section, .sales-section, .chart-section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(123, 94, 158, 0.1);
+}
+
+form {
+    display: flex;
+    gap: 10px;
+}
+
+input, select, button {
+    padding: 8px;
+    border: 1px solid #d4c8e8;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #7b5e9e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #6a4e87;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #d4c8e8;
+}
+
+th {
+    background-color: #e8dff5;
+}
+
+.delete-btn {
+    background-color: #ff6b6b;
+    padding: 5px 10px;
+}

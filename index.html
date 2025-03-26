@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Gudang & Penjualan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Sistem Gudang & Penjualan</h1>
+        
+        <!-- Form Tambah Barang -->
+        <div class="form-section">
+            <h2>Tambah Barang</h2>
+            <form id="addItemForm">
+                <input type="text" id="itemName" placeholder="Nama Barang" required>
+                <input type="number" id="itemQty" placeholder="Jumlah" required>
+                <input type="number" id="itemPrice" placeholder="Harga (Rp)" required>
+                <button type="submit">Tambah</button>
+            </form>
+        </div>
+
+        <!-- Tabel Inventori -->
+        <div class="inventory-section">
+            <h2>Inventori</h2>
+            <table id="inventoryTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nama Barang</th>
+                        <th>Jumlah</th>
+                        <th>Harga</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody id="inventoryBody"></tbody>
+            </table>
+        </div>
+
+        <!-- Form Penjualan -->
+        <div class="sales-section">
+            <h2>Catat Penjualan</h2>
+            <form id="saleForm">
+                <select id="saleItem" required></select>
+                <input type="number" id="saleQty" placeholder="Jumlah Terjual" required>
+                <button type="submit">Catat</button>
+            </form>
+        </div>
+
+        <!-- Chart Penjualan -->
+        <div class="chart-section">
+            <h2>Grafik Penjualan</h2>
+            <canvas id="salesChart"></canvas>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
